@@ -199,6 +199,36 @@
         </article>
 
         <article class="card">
+          <p class="card__label">Backend · Dynamic Content</p>
+          <h3 class="card__title">Server-Driven In-App Workflow Engine</h3>
+          <p class="card__desc">
+            Designed an in-app dependency framework that dynamically drives which photos and questions
+            an installer sees based on order context and workflow state. Built the linkage between
+            content objects and the dependency data model for server-driven, conditional field
+            rendering — replacing app-hardcoded flows with a centrally configurable engine and cutting
+            release cycles for content changes.
+          </p>
+          <ul class="card__tech">
+            <li>Java</li><li>Oracle SQL</li><li>JSON Payload Assembly</li><li>Rules/Dependency Modeling</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card__label">Backend · Connectivity</p>
+          <h3 class="card__title">eSIM &amp; Multi-SIM Provisioning Backend</h3>
+          <p class="card__desc">
+            Led backend enablement for next-gen connectivity, including feature-flag-driven Multi-SIM
+            provisioning and integration with the device orchestration system. Delivered the eSIM
+            repair flow with device-identifier validation while preserving backward compatibility for
+            older app versions, and extended the order/config backends with asset-level device
+            identifiers via vendor lookups.
+          </p>
+          <ul class="card__tech">
+            <li>Java</li><li>Oracle SQL</li><li>eSIM Provisioning</li><li>Orchestration APIs</li><li>Feature Flags</li>
+          </ul>
+        </article>
+
+        <article class="card">
           <p class="card__label">Open-Source · Accessibility</p>
           <h3 class="card__title">Work Buddy — Accessible LMS</h3>
           <p class="card__desc">
@@ -253,45 +283,33 @@
         </article>
 
         <article class="card">
-          <p class="card__label">Android · Provisioning</p>
-          <h3 class="card__title">Zero-Touch Provisioning (ZTP)</h3>
+          <p class="card__label">Android · Provisioning &amp; Self-Install</p>
+          <h3 class="card__title">Zero-Touch Provisioning &amp; Guided Self-Install</h3>
           <p class="card__desc">
-            Built automated Zero-Touch Provisioning into the OASIS Android app, letting technicians
-            trigger device association, SIM activation, and terminal registration from the field.
-            Added barcode scanning and validation of hardware identifiers (PN, SN, ICCID, IMEI) on
-            the BOM screen, with guided fallbacks and reason-code logging for orchestration retries.
+            Built automated Zero-Touch Provisioning (ZTP) and a guided self-install engine into the
+            OASIS Android app — device association, SIM activation, and terminal registration from the
+            field, with barcode capture/validation of hardware IDs (PN, SN, ICCID, IMEI). Added
+            on-device diagnostics (line health, WAN, modem) and a step-by-step wizard UI that
+            auto-initiates site registration and bundles diagnostics for ticket logging — reducing
+            support calls, truck rolls, and manual data-entry errors.
           </p>
           <ul class="card__tech">
-            <li>Android</li><li>Kotlin/Java</li><li>Barcode Scanning</li><li>ZTP Orchestration APIs</li><li>REST/JSON</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <p class="card__label">Android · Secure Firmware</p>
-          <h3 class="card__title">On-Device Terminal Software Update</h3>
-          <p class="card__desc">
-            Implemented local, pre-activation firmware updates for satellite terminals over Wi-Fi
-            directly from the OASIS Android app, secured with mutual TLS using app-bundled client
-            certificates. Managed offline firmware package sync and built real-time progress,
-            status, and error recovery around local upload APIs — reducing site bring-up times and
-            OTA bandwidth usage.
-          </p>
-          <ul class="card__tech">
-            <li>Android</li><li>Kotlin/Java</li><li>mTLS / Client Certs</li><li>Local HTTPS APIs</li><li>Offline Sync</li>
+            <li>Android</li><li>Kotlin/Java</li><li>Barcode Scanning</li><li>ZTP Orchestration APIs</li><li>On-Device Diagnostics</li><li>REST/JSON</li>
           </ul>
         </article>
 
         <article class="card">
           <p class="card__label">Android · Satellite Commissioning</p>
-          <h3 class="card__title">SBC Upload &amp; Beam Override</h3>
+          <h3 class="card__title">Satellite Terminal Commissioning</h3>
           <p class="card__desc">
-            Automated SBC (Satellite-Based Commissioning) file sync and one-click local upload over
-            Wi-Fi/HTTP in the OASIS Android app, letting technicians flash configuration tables
-            before commissioning. Built the Beam Override and satellite install interface with
-            server-provisioned beam parameters, plus polarization, alignment, and signal-lock checks.
+            Delivered the OASIS Android terminal commissioning suite: local pre-activation firmware
+            updates over Wi-Fi secured with mutual TLS and app-bundled certificates, offline package
+            sync, and automated SBC (Satellite-Based Commissioning) file upload. Built the Beam
+            Override and satellite install interface with polarization, alignment, and signal-lock
+            checks — cutting site bring-up times and OTA bandwidth while reducing pointing errors.
           </p>
           <ul class="card__tech">
-            <li>Android</li><li>Kotlin/Java</li><li>Local Terminal HTTP APIs</li><li>SBC Sync</li><li>Pointing &amp; Peaking</li>
+            <li>Android</li><li>Kotlin/Java</li><li>mTLS / Client Certs</li><li>Local Terminal HTTP APIs</li><li>SBC Sync</li><li>Pointing &amp; Peaking</li>
           </ul>
         </article>
 
@@ -306,21 +324,6 @@
           </p>
           <ul class="card__tech">
             <li>Android</li><li>Kotlin/Java</li><li>eSIM / Multi-SIM</li><li>Signal Telemetry</li><li>REST/JSON</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <p class="card__label">Android · Self-Install</p>
-          <h3 class="card__title">Guided Self-Help &amp; Self-Install</h3>
-          <p class="card__desc">
-            Designed the guided Self-Help and Self-Install workflow engine in the OASIS Android app,
-            with on-device diagnostics for line health, WAN connectivity, and modem status. Built an
-            interactive step-by-step wizard UI and self-service activation triggers that auto-initiate
-            site registration on pass and bundle diagnostic payloads for automated ticket logging —
-            reducing support calls and truck rolls.
-          </p>
-          <ul class="card__tech">
-            <li>Android</li><li>Kotlin/Java</li><li>On-Device Diagnostics</li><li>Wizard UI</li><li>REST/JSON</li>
           </ul>
         </article>
 
