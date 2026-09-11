@@ -238,6 +238,93 @@
         </article>
 
         <article class="card">
+          <p class="card__label">Android · On-Device ML</p>
+          <h3 class="card__title">OASIS On-Device Photo Quality Audit</h3>
+          <p class="card__desc">
+            Integrated an on-device ML Lite model into the OASIS Android app for real-time photo
+            quality auditing at the point of capture, eliminating server round-trips. Surfaced
+            instant "Qualified / Not Qualified" feedback, watermarked photos with their audit
+            outcome, and gated the flow behind QID-level feature flags for safe, warn-only rollout
+            with zero disruption to installer workflows.
+          </p>
+          <ul class="card__tech">
+            <li>Android</li><li>Kotlin/Java</li><li>ML Lite (on-device)</li><li>Feature Flags</li><li>REST/JSON</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card__label">Android · Provisioning</p>
+          <h3 class="card__title">Zero-Touch Provisioning (ZTP)</h3>
+          <p class="card__desc">
+            Built automated Zero-Touch Provisioning into the OASIS Android app, letting technicians
+            trigger device association, SIM activation, and terminal registration from the field.
+            Added barcode scanning and validation of hardware identifiers (PN, SN, ICCID, IMEI) on
+            the BOM screen, with guided fallbacks and reason-code logging for orchestration retries.
+          </p>
+          <ul class="card__tech">
+            <li>Android</li><li>Kotlin/Java</li><li>Barcode Scanning</li><li>ZTP Orchestration APIs</li><li>REST/JSON</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card__label">Android · Secure Firmware</p>
+          <h3 class="card__title">On-Device Terminal Software Update</h3>
+          <p class="card__desc">
+            Implemented local, pre-activation firmware updates for satellite terminals over Wi-Fi
+            directly from the OASIS Android app, secured with mutual TLS using app-bundled client
+            certificates. Managed offline firmware package sync and built real-time progress,
+            status, and error recovery around local upload APIs — reducing site bring-up times and
+            OTA bandwidth usage.
+          </p>
+          <ul class="card__tech">
+            <li>Android</li><li>Kotlin/Java</li><li>mTLS / Client Certs</li><li>Local HTTPS APIs</li><li>Offline Sync</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card__label">Android · Satellite Commissioning</p>
+          <h3 class="card__title">SBC Upload &amp; Beam Override</h3>
+          <p class="card__desc">
+            Automated SBC (Satellite-Based Commissioning) file sync and one-click local upload over
+            Wi-Fi/HTTP in the OASIS Android app, letting technicians flash configuration tables
+            before commissioning. Built the Beam Override and satellite install interface with
+            server-provisioned beam parameters, plus polarization, alignment, and signal-lock checks.
+          </p>
+          <ul class="card__tech">
+            <li>Android</li><li>Kotlin/Java</li><li>Local Terminal HTTP APIs</li><li>SBC Sync</li><li>Pointing &amp; Peaking</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card__label">Android · Hybrid Hardware &amp; eSIM</p>
+          <h3 class="card__title">Fusion Integration (WL3000 &amp; WL3100)</h3>
+          <p class="card__desc">
+            Integrated next-gen Fusion hybrid hardware into the OASIS Android app for dual-path
+            LTE + Satellite provisioning. Implemented eSIM/multi-SIM activation with automated carrier
+            profile selection, real-time RSRP/RSRQ/latency validation, and an audio-tone-guided
+            antenna pointing interface — with dynamic model detection across WL3000/WL3100 orders.
+          </p>
+          <ul class="card__tech">
+            <li>Android</li><li>Kotlin/Java</li><li>eSIM / Multi-SIM</li><li>Signal Telemetry</li><li>REST/JSON</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card__label">Android · Self-Install</p>
+          <h3 class="card__title">Guided Self-Help &amp; Self-Install</h3>
+          <p class="card__desc">
+            Designed the guided Self-Help and Self-Install workflow engine in the OASIS Android app,
+            with on-device diagnostics for line health, WAN connectivity, and modem status. Built an
+            interactive step-by-step wizard UI and self-service activation triggers that auto-initiate
+            site registration on pass and bundle diagnostic payloads for automated ticket logging —
+            reducing support calls and truck rolls.
+          </p>
+          <ul class="card__tech">
+            <li>Android</li><li>Kotlin/Java</li><li>On-Device Diagnostics</li><li>Wizard UI</li><li>REST/JSON</li>
+          </ul>
+        </article>
+
+        <article class="card">
           <p class="card__label">Personal · Web</p>
           <h3 class="card__title">Moon Polls</h3>
           <p class="card__desc">
@@ -288,8 +375,16 @@
         <div class="skill-group">
           <h3>Backend &amp; Languages</h3>
           <ul>
-            <li>Java</li><li>Python</li><li>C++</li><li>TypeScript</li><li>JavaScript (ES6+)</li>
+            <li>Java</li><li>Kotlin</li><li>Python</li><li>C++</li><li>TypeScript</li><li>JavaScript (ES6+)</li>
             <li>PL/SQL</li><li>RESTful Web Services</li><li>GraphQL</li><li>Microservices</li><li>System Design (HLD/LLD)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Mobile &amp; On-Device</h3>
+          <ul>
+            <li>Android (Native)</li><li>Kotlin/Java</li><li>ML Lite (on-device inference)</li>
+            <li>eSIM / Multi-SIM Provisioning</li><li>Barcode Scanning</li><li>mTLS / Client Certificates</li>
+            <li>Offline Package Sync</li><li>Feature Flags</li><li>Signal Telemetry (RSRP/RSRQ)</li>
           </ul>
         </div>
         <div class="skill-group">
