@@ -5,7 +5,7 @@
 ---
 
 ## 👨‍💻 Executive Summary
-Senior Software Developer with 6+ years of experience engineering, scaling, and maintaining high-volume 24x7 client-side applications, microservices, and media distribution platforms[cite: 2]. Proven track record as an Architecture Owner—writing clean, maintainable code, authoring system specifications (HLD/LLD), executing zero-downtime security modernizations, and integrating modern AI tools to streamline the SDLC[cite: 2]. Recognized for cutting API latency by 50%, reducing manual operational workloads by up to 95%, and eliminating critical security vulnerabilities across enterprise platforms[cite: 2, 3].
+Senior Software Developer with 6+ years of experience engineering, scaling, and maintaining high-volume 24x7 client-side applications, microservices, and media distribution platforms[cite: 2]. Proven track record as an Architecture Owner who writes clean, maintainable code, authors system specifications (HLD/LLD), executes zero-downtime security modernizations, and integrates modern AI tools to streamline the SDLC[cite: 2]. Recognized for cutting API latency by 50%, reducing manual operational workloads by up to 95%, and eliminating critical security vulnerabilities across enterprise platforms[cite: 2, 3].
 
 ---
 
@@ -72,7 +72,7 @@ Senior Software Developer with 6+ years of experience engineering, scaling, and 
 
 ## 💻 Featured Technical & Open-Source Projects
 
-* **Work Buddy — Accessible LMS Platform** *(Lead Engineer & Architect)*[cite: 2, 3]
+* **Work Buddy - Accessible LMS Platform** *(Lead Engineer & Architect)*[cite: 2, 3]
   * **Tech:** React.js, AWS Amplify, DynamoDB, Cognito, Lambda, GraphQL[cite: 2, 3]
   * **Summary:** Led a 3-person team to architect a web-based, serverless Learning Management System designed specifically for visually impaired users[cite: 2, 3]. Authored the detailed software design (SADD) and integrated serverless AWS services with GraphQL for scalable data fetching[cite: 2, 3].
 * **OASIS Mobile CI/CD Automation** *(DevOps Engineer)*[cite: 3]
@@ -86,8 +86,8 @@ Senior Software Developer with 6+ years of experience engineering, scaling, and 
 
 ## 🎓 Education & Credentials
 
-* **Master of Engineering in Software Engineering** — University of Maryland, College Park (GPA: 3.925)[cite: 2]
-* **Bachelor of Engineering in Electrical & Computer Engineering** — NED University (GPA: 3.85)[cite: 2]
+* **Master of Engineering in Software Engineering** - University of Maryland, College Park (GPA: 3.925)[cite: 2]
+* **Bachelor of Engineering in Electrical & Computer Engineering** - NED University (GPA: 3.85)[cite: 2]
 * **Certifications:** 
   * Graduate Certificate Diploma in Cybersecurity (University of Maryland)[cite: 1, 2]
   * Gen AI Leadership (Google)[cite: 1, 2]

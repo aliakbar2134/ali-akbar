@@ -1,9 +1,9 @@
-# Muhammad Ali Akbar — Portfolio
+# Muhammad Ali Akbar - Portfolio
 
 A responsive single-page portfolio website for Muhammad Ali Akbar, Senior Software Engineer
 (Java backend systems, microservices architecture, and AI workflows).
 
-Built with plain HTML, CSS, and vanilla JavaScript — no build step required.
+Built with plain HTML, CSS, and vanilla JavaScript, with no build step required.
 
 ## Sections
 - Hero / intro
