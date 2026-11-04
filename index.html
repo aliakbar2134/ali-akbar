@@ -87,7 +87,7 @@
             <li>GCP (Cloud Run, GKE, Cloud Build)</li>
             <li>OKTA / OIDC / OAuth2</li>
             <li>Claude API &amp; MCP</li>
-            <li>RAG &amp; Agentic AI</li>
+            <li>RAG, LangChain &amp; Agentic AI</li>
           </ul>
         </div>
         <div class="about__stats">
@@ -166,6 +166,36 @@
           </p>
           <ul class="card__tech">
             <li>Python</li><li>Claude API</li><li>Kiro</li><li>MCP</li><li>RAG</li><li>Confluence/Jira API</li>
+          </ul>
+        </article>
+
+        <article class="card card--feature">
+          <p class="card__label">Featured | Enterprise AI</p>
+          <h3 class="card__title">OASIS Self-Help AI Agent (RAG + ReAct)</h3>
+          <p class="card__desc">
+            Added a self-help feature to OASIS. An AI agent trained on historical email responses
+            and resolution history runs as a RAG system with ReAct-style reasoning, built with
+            LangChain. When an installer hits an app error, they get step-by-step resolution
+            instructions to follow on site, and a CSR is called only if those steps do not fix it.
+            Reduced CSR calls by 60%.
+          </p>
+          <ul class="card__tech">
+            <li>Python</li><li>LangChain</li><li>Claude API</li><li>RAG</li><li>ReAct Agents</li><li>Prompt Engineering</li>
+          </ul>
+        </article>
+
+        <article class="card card--feature">
+          <p class="card__label">Featured | Applied AI</p>
+          <h3 class="card__title">Agent-Based Photo Verification</h3>
+          <p class="card__desc">
+            Upgrading the OASIS ML photo audit to use an AI agents API for stronger verification.
+            Fetches the correct reference pictures from GCS, analyzes them, and matches them against
+            the newly captured photo, returning a score, pass/fail, recommendations, and missing
+            items. Also checks for small watermarks to make sure a submission is not a screenshot
+            or a reused old picture.
+          </p>
+          <ul class="card__tech">
+            <li>Python</li><li>AI Agents API</li><li>GCS</li><li>REST/JSON</li><li>Feature Flags</li>
           </ul>
         </article>
 
@@ -409,6 +439,7 @@
           <h3>AI &amp; Automation</h3>
           <ul>
             <li>Claude API</li><li>Agentic AI Workflows</li><li>MCP</li><li>RAG</li>
+            <li>LangChain</li><li>PyTorch</li><li>ReAct Agents</li>
             <li>Semantic Search</li><li>Kiro</li><li>Copilot</li><li>Prompt Engineering</li>
           </ul>
         </div>
