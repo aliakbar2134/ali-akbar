@@ -289,11 +289,9 @@ h1, h2, h3, h4 { color: var(--text-bright); line-height: 1.15; font-weight: 700;
 .skill-group .skill-icons li.skill-icons__wide { width: 88px; }
 .skill-group .skill-icons img {
   width: 100%; height: 100%; object-fit: contain;
-  filter: grayscale(1) contrast(1.1); opacity: .75;
-  transition: filter .2s ease, opacity .2s ease;
+  /* full color, always */
 }
 .skill-group .skill-icons li:hover { transform: translateY(-4px) scale(1.06); background: #fff; }
-.skill-group .skill-icons li:hover img { filter: none; opacity: 1; }
 
 /* ===== Responsive ===== */
 @media (max-width: 860px) {
