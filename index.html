@@ -9,8 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+  <!-- Page loader (removed by script.js; auto-hides via CSS if scripts fail) -->
+  <div class="loader" id="loader" aria-hidden="true"><span class="loader__dot"></span></div>
+
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
@@ -31,8 +35,9 @@
 
   <!-- Hero -->
   <section class="hero" id="hero">
-    <div class="container hero__inner">
-      <p class="hero__eyebrow">Hi, my name is</p>
+    <div class="container hero__layout">
+    <div class="hero__inner">
+      <p class="hero__eyebrow callout">Hi, it's me</p>
       <h1 class="hero__name">Muhammad Ali Akbar</h1>
       <h2 class="hero__title">Senior Software Engineer</h2>
       <p class="hero__tagline">
@@ -54,6 +59,16 @@
         <li>🔗 <a href="https://linkedin.com/in/muhammadaliakbar2134" target="_blank" rel="noopener">LinkedIn</a></li>
         <li>💻 <a href="https://github.com/aliakbar2134" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
+    </div>
+    <div class="hero__visual">
+      <a href="mailto:muhammadali.akbar1996@outlook.com" class="talk" aria-label="Email me, let's talk">
+        <span class="talk__pulse" aria-hidden="true"></span>
+        <span class="talk__label" aria-hidden="true">Let's<br />talk</span>
+      </a>
+      <div class="hero__portrait">
+        <img src="assets/headshot.jpg" alt="Muhammad Ali Akbar" width="1024" height="1024" />
+      </div>
+    </div>
     </div>
   </section>
 
@@ -407,6 +422,17 @@
       <div class="skills">
         <div class="skill-group">
           <h3>Backend &amp; Languages</h3>
+          <ul class="skill-icons">
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="Java" title="Java" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="Python" title="Python" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/graphql/graphql-plain.svg" alt="GraphQL" title="GraphQL" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/oracle/oracle-original.svg" alt="Oracle SQL" title="Oracle SQL / PL/SQL" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/junit/junit-original.svg" alt="JUnit" title="JUnit" width="40" height="40" loading="lazy" /></li>
+          </ul>
           <ul>
             <li>Java</li><li>Kotlin</li><li>Python</li><li>C++</li><li>TypeScript</li><li>JavaScript (ES6+)</li>
             <li>PL/SQL</li><li>RESTful Web Services</li><li>GraphQL</li><li>Microservices</li><li>System Design (HLD/LLD)</li>
@@ -414,6 +440,12 @@
         </div>
         <div class="skill-group">
           <h3>Mobile &amp; On-Device</h3>
+          <ul class="skill-icons">
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/android/android-original.svg" alt="Android" title="Android (Native)" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="Java" title="Java" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/json/json-original.svg" alt="REST / JSON" title="REST / JSON" width="40" height="40" loading="lazy" /></li>
+          </ul>
           <ul>
             <li>Android (Native)</li><li>Kotlin/Java</li><li>ML Lite (on-device inference)</li>
             <li>eSIM / Multi-SIM Provisioning</li><li>Barcode Scanning</li><li>mTLS / Client Certificates</li>
@@ -422,6 +454,17 @@
         </div>
         <div class="skill-group">
           <h3>Cloud &amp; DevOps</h3>
+          <ul class="skill-icons">
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" title="Google Cloud (GCP)" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes (GKE)" title="Kubernetes (GKE)" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dynamodb/dynamodb-original.svg" alt="DynamoDB" title="DynamoDB" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="Git" title="Git" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="GitHub" title="GitHub" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bash/bash-original.svg" alt="Shell scripting" title="Shell scripting" width="40" height="40" loading="lazy" /></li>
+            <li class="skill-icons__wide"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/splunk/splunk-original-wordmark.svg" alt="Splunk" title="Splunk" width="72" height="40" loading="lazy" /></li>
+          </ul>
           <ul>
             <li>GCP: Cloud Run</li><li>GKE</li><li>Cloud Build/Deploy</li><li>Cloud Functions</li>
             <li>Artifact Registry</li><li>BigQuery</li><li>GCS</li><li>AWS: Lambda</li><li>DynamoDB</li>
@@ -430,6 +473,10 @@
         </div>
         <div class="skill-group">
           <h3>Security &amp; Auth</h3>
+          <ul class="skill-icons">
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/okta/okta-original.svg" alt="Okta" title="Okta / OIDC" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/oauth/oauth-original.svg" alt="OAuth" title="OAuth2" width="40" height="40" loading="lazy" /></li>
+          </ul>
           <ul>
             <li>OKTA / OIDC</li><li>OAuth2</li><li>SAML 2.0</li><li>JWT</li>
             <li>Servlet Filters</li><li>Parameterized Queries</li><li>Zero-Trust Architecture</li>
@@ -437,10 +484,31 @@
         </div>
         <div class="skill-group">
           <h3>AI &amp; Automation</h3>
+          <ul class="skill-icons">
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pytorch/pytorch-original.svg" alt="PyTorch" title="PyTorch" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="Python" title="Python" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jira/jira-original.svg" alt="Jira" title="Jira (MCP integration)" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/confluence/confluence-original.svg" alt="Confluence" title="Confluence (MCP integration)" width="40" height="40" loading="lazy" /></li>
+          </ul>
           <ul>
             <li>Claude API</li><li>Agentic AI Workflows</li><li>MCP</li><li>RAG</li>
             <li>LangChain</li><li>PyTorch</li><li>ReAct Agents</li>
             <li>Semantic Search</li><li>Kiro</li><li>Copilot</li><li>Prompt Engineering</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web &amp; Frontend</h3>
+          <ul class="skill-icons">
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="React" title="React / React Native" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sass/sass-original.svg" alt="SCSS" title="SCSS" width="40" height="40" loading="lazy" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flask/flask-original.svg" alt="Flask" title="Flask" width="40" height="40" loading="lazy" /></li>
+          </ul>
+          <ul>
+            <li>React.js</li><li>React Native</li><li>Next.js</li><li>TypeScript</li>
+            <li>HTML5/CSS3</li><li>SCSS</li><li>Python/Flask</li><li>Component-Driven UI</li>
           </ul>
         </div>
       </div>
@@ -505,6 +573,8 @@
     <p>Designed &amp; built by Muhammad Ali Akbar | © <span id="year"></span></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
